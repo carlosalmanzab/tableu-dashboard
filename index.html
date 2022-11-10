@@ -1,92 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="This is a ecommerce dashboard template with a chart"/>
-<meta name ="Author" content="Carlos Almanza Bedoya">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Tableu Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="This is a ecommerce dashboard template with a chart" />
+    <meta name="Author" content="Carlos Almanza Bedoya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tableu Dashboard</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
-                  </svg>
-                  Dash
-              </a>
+                <a class="navbar-brand link-light" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                    </svg>
+                    COMPAS.COM
+                </a>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <div class="container-fluid">
-            <div class="row mt-5">
+            <div class="row">
 
-                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                      <span class="fs-4">Sidebar</span>
+                <div class="col-3 p-3 bg-light m-0 border-1 border-end"
+                    style="width: 200px; height:;">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                        <svg class="bi pe-none me-2" width="40" height="32">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                        <span class="fs-4">Menu</span>
                     </a>
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
-                      <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                          Home
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link link-dark">
-                          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                          Dashboard
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link link-dark">
-                          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                          Orders
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link link-dark">
-                          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                          Products
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="nav-link link-dark">
-                          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                          Customers
-                        </a>
-                      </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-dark" aria-current="page">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#home"></use>
+                                </svg>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link active">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#speedometer2"></use>
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#table"></use>
+                                </svg>
+                                tablas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#grid"></use>
+                                </svg>
+                                Resañas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#people-circle"></use>
+                                </svg>
+                                Información
+                            </a>
+                        </li>
                     </ul>
-                    <hr>
-                    <div class="dropdown">
-                      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>mdo</strong>
-                      </a>
-                      <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                </div>
+
+                <div class="col-9 ">
+                    <div class='tableauPlaceholder' id='viz1668054334153' style='position: relative'><noscript><a
+                                href='#'><img alt='Cantidad de habitaciones disponibles en cada municipio '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;ComercioyturismoenColombiaarriendosbaresyhabitaciones&#47;Cantidaddehabitacionesdisponiblesencadamunicipio&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name'
+                                value='ComercioyturismoenColombiaarriendosbaresyhabitaciones&#47;Cantidaddehabitacionesdisponiblesencadamunicipio' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;ComercioyturismoenColombiaarriendosbaresyhabitaciones&#47;Cantidaddehabitacionesdisponiblesencadamunicipio&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='es-ES' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1668054334153'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                </div>
+
+
             </div>
         </div>
     </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
